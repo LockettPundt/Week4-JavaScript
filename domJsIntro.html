@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <p id="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Dolorem nisi, distinctio quod consequatur excepturi, expedita 
+        id possimus illo, non doloremque quidem suscipit ducimus nobis 
+        sequi ab quasi similique incidunt consequuntur?
+        </p>
+        <input type="text" id="userInput" placeholder="Your name.."/>
+        <p id="helloWorld">Hello World!</p>
+        <button type="button" id="clickMe">Click me</button>
+    </body>
+    <script>
+        const myButton = document.getElementById("clickMe");
+        const loremText = document.getElementById("lorem");
+        const hello = () => helloWorld.innerHTML = `Hi There ${textField.value}!`;
+        const colorSwap = () => loremText.setAttribute("style", "background-color: red;");
+        const textField = document.getElementById("userInput");
+        const helloWorld = document.getElementById("helloWorld");
+        myButton.addEventListener("click", hello);
+        loremText.addEventListener("click", colorSwap);
+    </script>
+</html>
