@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" type="text/css" href="madlib-V2.css" media="screen"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <h1 id="title">MADLIB</h1>
+        <p id="madlibText">Hi there <span id="name">_____</span>, interesting seeing you in <span class="blankField" id="place">____</span>. 
+            What are you doing here exactly? Well, nevermind. I've been <span class="blankField" id="verb">____ </span> in place until your return. 
+            Are you hungry <span id="name">____</span>? I stole some <span class="blankField" id="food">____</span> for you. In regards to our last 
+            conversation, I too am afraid of <span class="blankField" id="fear">____</span>. Well, uh, great chat <span id="name">____</span>. 
+            See you again in <span class="blankField" id="years">____</span> years.....
+        </p>
+        <div class="inputWrapper" id="wrapper">
+            <input id="nameInput" type="text" placeholder="Enter a name">
+            <input class="userInput" id="placeInput" type="text" placeholder="Enter a place">
+            <input class="userInput" id="verbInput" type="text" placeholder="Enter an infinitive verb">
+            <input class="userInput" id="foodInput" type="text" placeholder="Enter a type of food">
+            <input class="userInput" id="fearInput" type="text" placeholder="Enter your greatest fear">
+            <input class="userInput" id="yearInput" type="text" placeholder="Enter a number">
+            <button id="goButton" type="button">GO!</button>
+        </div>
+        <div class="refresh" id="refreshButton">
+            <button id="newMadLibButton" type="button">NEW MADLIB</button>
+        </div>
+        <script src="madlibwithDOM-V2.js"></script>
+    </body>
+</html>
