@@ -1,0 +1,51 @@
+.inputWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+    margin: 0px 50px 0px 50px;
+    background-color: #A9A4A4;
+}
+input {
+    height: 30px;
+    width: 90px;
+    margin:10px;
+    border: none;
+}
+button {
+    height: 35px;
+    display: flex;
+    align-self: center;
+    background-color: aquamarine;
+    font-family: Helvetica, sans-serif;
+    margin-left: 10px;
+    border: none;
+}
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    color: aquamarine;
+    background-color: #A9A4A4;
+    padding:20px;
+    margin: 50px 50px 0px 50px;
+}
+body {
+    background-color: lightsteelblue;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 3px;
+    margin: 0px 50px 0px 50px;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    color: aquamarine;
+    font-size: 18px;
+    background-color: #A9A4A4;
+
+}
