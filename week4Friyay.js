@@ -33,15 +33,21 @@ const sortThis = arr => arr.sort((a, b) => a - b);
 
 //6. Write a JavaScript program to find the most frequent item of an array.
 
-// const mostUsed = arr => {
-//     const arrContent ={};
-//     console.log(arr);
-//     arr.forEach(item => !arrContent.hasOwnProperty(item) ? arrContent.item += "hi" : arrContent.item = "oh no");
-//     console.log(arrContent)
-// }
-// console.log(mostUsed(arr1));
+const mostUsed = arr => {
+    const itemCount = {}
+    arr.forEach((item, index) => itemCount.hasOwnProperty(item) ? itemCount[item] += 1 : itemCount[item] = 1);
+    //console.log(itemCount);
+    let sorted = [];
+    for (item in itemCount) {
+        sorted.push([item, itemCount[item]]);
+    }
+    sorted.sort((a,b) => b[1] - a[1]);
+    return sorted[0][0];
+}
 
-//7. 7. Write a JavaScript program which accept a string as input and swap the case of each character. For
+//console.log(mostUsed(arr1));
+
+//7. Write a JavaScript program which accept a string as input and swap the case of each character. For
 //example if you input The Quick Brown Fox the output should be tHE qUICK bROWN fOX.
 
 const caseSwap = str => str.split('').map(char => char.toLowerCase() === char ? char.toUpperCase() : char.toLowerCase()).join('');
